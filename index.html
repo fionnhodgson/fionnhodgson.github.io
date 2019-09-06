@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
   <style>
     body {
-      background-color: white;
+      background-color: silver;
     }
     p {
       color: black;
       width: 500px;
-      margin: auto;
+      margin: 15px auto;
+	  padding: 6px;
       border: 1px solid black;
-      padding: 20px 20px 20px 20px;
-      font-family: monospace;
+      font-family: "Kanit", sans-serif;
+	  font-size: 12px;
     } 
     
     h1 {
       color: gray;
+      margin: 15px auto;
       text-align: center;
-      width: 300px;
-      border: 2px solid black;
-      padding: 4px, 50px, 4px, 50px;
-      margin: auto;
-      font-family: monospace;
+      width: 600px;
+      font-family: "Press Start 2P", sans-serif;
+	  font-size: 14px;
     }
     
-    img {
-      width: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 20px;
+    .center {
+      display: block;
+      width:500px;
+	  margin: 15px auto;
+	  border: 2px solid black;
     }
+	
+	hr{
+	  border-top: 6px double #8c8b8b;
+	  width: 500px;
+	}
 </style>
 </head>
 
 <body>
 <div>
-  <h1>Fionn's Rogue HTML</h1>
+  <h1>Fionn's awful CSS</h1>
 </div>
-<div><img src="/img/Banner08005.jpg" alt="Main Banner - Stovokor Beach"></div>
+<div><img src="img/Banner08005.jpg" alt="Main Banner - Stovokor Beach" class = "center"></div>
+  <div><p>
+    <a href="https://fionnhodgson.com" target="_blank"> Click here</a> to go to my 'real' Wordpress website.
+    </p></div>
   <hr />
 <div><p>We don't really need a crowd to have a party
 Just a funky beat, and you to get it started and oh
@@ -58,11 +68,19 @@ Big fun</p></div>
 <p>Date/Time: <span id="datetime"></span></p>
 
 </body>
-<footer>
-<script>
+
+
+<div style="position: relative">
+                <p style="position: fixed; bottom: 0; width:100%; text-align: center"> 
+				<script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
-</script>
+				</script>
+                </p>
+            </div>
+			
+<footer>
+<p>Made by Fionn</p>
 </footer>
 
 </html>
