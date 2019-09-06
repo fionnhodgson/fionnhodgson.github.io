@@ -3,5 +3,11 @@
 <body>
 <h1>Hello World</h1>
 <p>Fionn is now hosted with GitHub Pages.</p>
+<p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 </body>
 </html>
