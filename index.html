@@ -2,41 +2,79 @@
 <html>
 <head>
   <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
   <style>
     body {
-      background-color: silver;
+      background-image: url("img/img_background.jpg");
+      background-attachment: fixed;
     }
-    p {
-      color: black;
-      width: 500px;
+    p, ul {
+      background: rgba(0, 0, 100, 0.6);
+      color: white;
+      width: 678px;
       margin: 15px auto;
-	  padding: 6px;
-      border: 1px solid black;
-      font-family: "Kanit", sans-serif;
-	  font-size: 12px;
-    } 
-    
+	  padding: 12px;
+      border: 1px solid white;
+      font-family: "IBM Plex Sans", sans-serif;
+	  font-size: 14px;
+	  line-height: 16pt;
+    }
+
+
+  a:link {
+    text-decoration: none;
+    color: red;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: aqua;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: lime;
+  }
+
+  a:active {
+    text-decoration: underline;
+    color: lime;
+  }
+
     h1 {
-      color: gray;
+      color: DeepSkyBlue;
       margin: 15px auto;
       text-align: center;
-      width: 600px;
+      width: 700px;
       font-family: "Press Start 2P", sans-serif;
-	  font-size: 14px;
+	  font-size: 17px;
     }
-    
+
+    h2 {
+      color: Aqua;
+      margin: 15px auto;
+      text-align: left;
+      width: 700px;
+      font-family: "IBM Plex Sans", sans-serif;
+    font-size: 17px;
+    }
+
     .center {
       display: block;
-      width:500px;
+      width:700px;
 	  margin: 15px auto;
 	  border: 2px solid black;
     }
-	
+
 	hr{
-	  border-top: 6px double #8c8b8b;
-	  width: 500px;
+	  border-top: 3px double #8c8b8b;
+	  width: 700px;
 	}
+
+img{
+  border: 1px solid white;
+}
+
 </style>
 </head>
 
@@ -44,41 +82,123 @@
 <div>
   <h1>Fionn's awful CSS</h1>
 </div>
-<div><img src="img/Banner08005.jpg" alt="Main Banner - Stovokor Beach" class = "center"></div>
-  <div><p>
+<div>
+  <img src="img/Banner08005.jpg" alt="Main Banner - Stovokor Beach" class = "center"></div>
+  <div>
+    <p>
     <a href="https://fionnhodgson.com" target="_blank"> Click here</a> to go to my 'real' Wordpress website.
-    </p></div>
+    </p>
+  </div>
   <hr />
-<div><p>We don't really need a crowd to have a party
-Just a funky beat, and you to get it started and oh
-We'll dance the night away
-We're having big fun
-And the party's just begun, yeah
-We're having big fun
-Big fun</p></div>
-  <br />
-<div><p>It won't take a lot of thought for you to do it
+<div>
+  <h2>
+    Friday September 6th 2019
+  </h2>
+  <div>
+
+    <p>
+<img style="float: right; margin: 0;" src="img/distronaut_small.jpg" width="150" />
+      <strong>Useful Resources:</strong>
+
+<br/>-  <a href="https://javascript.info/code-editors" target="_blank">General info about code editors</a>
+<br/>-  <a href="https://code.visualstudio.com/" target="_blank">IDE - Visual Studio Code</a>
+<br/>-  <a href="https://atom.io/" target="_blank">Lightweight Code Editor - Atom</a>
+<br/>-  <a href="https://javascript.info/devtools" target="_blank">About debugging JS within browser</a>
+<br/>-  <a href="https://javascript.info/hello-world" target="_blank">Template for attaching & embedding JS</a>
+<br/>-  <a href="https://codepen.io" target="_blank">In-browser HTML/CSS/JS live editor</a>
+<br/>-  <a href="https://www.quackit.com/css/css_color_codes.cfm" target="_blank">CSS Colour Picker</a>
+<br/>
+<br/> <strong>Learning Websites:</strong>
+<br/>-  <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>
+<br/>-  <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a>
+</div>
+<p>
+    <strong>Hello world!</strong>
+    <br/>
+    <br/>
+
+    At the time of writing this, I barely know how to structure a plain HTML document, let alone any CSS or JS. I would like to learn how to do front-end development e.g. for in-house CRM systems. I already understand many concepts of computer programming through advanced GML (Game Maker Language) use for indie gamedev. Hopefully this will give me a head start. Time to learn how to use computers in the real world. Time to learn something useful!
+
+    <br/><br/><br/>
+    <code>
+      Let - declares a variable:<br/>
+let user = 'John';<br/>
+let age = 25;<br/>
+let message = 'Hello';<br/>
+<br/>
+Const - a variable that never changes:<br/>
+const myBirthday = '20.01.1992';<br/>
+const COLOR_ORANGE = "#FF7F00";<br/>
+// ...when we need to pick a color<br/>
+let color = COLOR_ORANGE;<br/>
+alert(color); // #FF7F00<br/>
+<br/>
+let admin, name; // can declare two variables at once<br/>
+name = "John";<br/>
+admin = name;<br/>
+alert( admin ); // "John"<br/>
+<br/>
+// Always Use Strict:<br/>
+"use strict";<br/>
+// Must be located at the top of a script, excluding comments.<br/>
+<br/>
+// embed an expression with backticks<br/>
+alert( `the result is ${1 + 2}` ); // the result is 3<br/>
+let name = "John";<br/>
+// embed a variable<br/>
+alert( `Hello, ${name}!` ); // Hello, John!<br/>
+<br/>
+typeof undefined // "undefined"<br/>
+typeof 0 // "number"<br/>
+typeof true // "boolean"<br/>
+typeof "foo" // "string"<br/>
+typeof Symbol("id") // "symbol"<br/>
+typeof Math // "object"  (1)<br/>
+typeof null // "object"  (2)<br/>
+typeof alert // "function"  (3)<br/>
+<br/>
+let year = prompt('When was the 2015 General Election', '');<br/>
+if (year < 2015) {<br/>
+  alert( 'Too early...' );<br/>
+} else if (year > 2015) {<br/>
+  alert( 'Too late' );<br/>
+} else {<br/>
+  alert( 'Exactly!' );<br/>
+}<br/>
+
+    </code>
+</p>
+
+</div>
+<div>
+<p>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="img/pastel_mornings.jpg" width="100" />
+It won't take a lot of thought for you to do it
 You just feel the groove, and baby then you move it and oh
 Oh, dance the night away
 We're having big fun
 And the party's just begun yeah, yeah yeah yeah
 We're having big fun
-Big fun</p></div>
+Big fun
+<br />
+<br />
+Because the <span style="color:lime">PASTEL MORNINGS</span> thumbnail in this element would bleed over the bottom of the above text, due to the tiny font size, I am adding this additional block of text.
+</p></div>
   <hr />
-<p>Date/Time: <span id="datetime"></span></p>
+<p>The date and time: <span id="datetime"></span></p>
 
 </body>
 
 
 <div style="position: relative">
-                <p style="position: fixed; bottom: 0; width:100%; text-align: center"> 
+
 				<script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
 				</script>
-                </p>
+
             </div>
-			
+
 <footer>
 <p>Made by Fionn</p>
 </footer>
