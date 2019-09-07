@@ -5,44 +5,45 @@
   <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
   <style>
     body {
-      background: rgb(0,236,255);
-      background-image:linear-gradient(to bottom, rgba(140,0,255,1), rgba(0,0,0,0)), url("img/img_background.jpg");
+      background: rgb(90,0,180);
+      background-image: url("img/img_background.jpg");
       background-position: bottom;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size:100% 100%;
     }
-    p, ul {
+    p, ul{
+      border-radius: 8px;
       background: rgba(0, 0, 100, 0.6);
       color: white;
       width: 678px;
       margin: 15px auto;
 	  padding: 12px;
-      border: 1px solid white;
+      border: 0 solid black;
       font-family: "IBM Plex Sans", sans-serif;
 	  font-size: 14px;
 	  line-height: 16pt;
     }
 
 
-  a:link {
-    text-decoration: none;
-    color: red;
-  }
-
-  a:visited {
+span,  a:link {
     text-decoration: none;
     color: aqua;
   }
 
-  a:hover {
-    text-decoration: underline;
-    color: lime;
+a:visited {
+    text-decoration: none;
+    color: #00BFFF;
   }
 
-  a:active {
+ a:hover {
     text-decoration: underline;
-    color: lime;
+    color: #7FFFD4;
+  }
+
+a:active {
+    text-decoration: underline;
+    color: #EE82EE;
   }
 
     h1 {
@@ -67,12 +68,44 @@
       display: block;
       width:700px;
 	  margin: 15px auto;
-	  border: 1px solid white;
+	  border: 2px solid black;
     }
 
     .container {
   position: relative;
   text-align: center;
+  color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  border-radius: 8px;
+  background-color: #003333;
+  overflow: hidden;
+  width:700px;
+  margin: 12px auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #00ace6;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 22px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #B0E0E6;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #00ace6;
   color: white;
 }
 
@@ -87,13 +120,27 @@
   text-shadow: 1px 1px #000;
 }
 
-	hr{
-	  border-top: 3px double #8c8b8b;
-	  width: 700px;
-	}
+hr{
+  border-top: 1px double #000;
+  width: 700px;
+}
+
+span.b {
+  display: inline-block;
+  width: 320px;
+  margin-left: 2px;
+  color: white;
+}
+
+span.c {
+  display: inline-block;
+  width: 350px;
+  text-align: right;
+  color: white;
+}
 
 img{
-  border: 1px solid white;
+  border-radius: 8px;
 }
 
 </style>
@@ -101,44 +148,70 @@ img{
 
 <body>
 <div class="container">
-  <img src="img/Banner08005.jpg" alt="Main Banner - Stovokor Beach" class = "center">
+  <img src="img/Banner08006.jpg" alt="Container" class = "center">
 <div class="centered">FionnHodgson.io</div>
 </div>
-  <div>
-    <p>
-    <a href="https://fionnhodgson.com" target="_blank"> Click here</a> to visit my Wordpress blog.
-    </p>
-  </div>
   <hr />
 <div>
+<!-- This is where the navigation menu goes -->
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#dev">Dev</a>
+    <a href="#css">CSS</a>
+    <a href="#js">JS</a>
+    <a href="#php">PHP</a>
+    <a href="https://fionnhodgson.com">Wordpress</a>
+</div>
   <h2>
-    Friday September 6th 2019
+    Last Updated: Sat 7th Sept 2019
   </h2>
   <div>
-
     <p>
-<img style="float: right; margin: 0;" src="img/distronaut_small.jpg" width="150" />
-      <strong>Useful Resources:</strong>
 
-<br/>-  <a href="https://javascript.info/code-editors" target="_blank">General info about code editors</a>
-<br/>-  <a href="https://code.visualstudio.com/" target="_blank">IDE - Visual Studio Code</a>
-<br/>-  <a href="https://atom.io/" target="_blank">Lightweight Code Editor - Atom</a>
-<br/>-  <a href="https://javascript.info/devtools" target="_blank">About debugging JS within browser</a>
-<br/>-  <a href="https://javascript.info/hello-world" target="_blank">Template for attaching & embedding JS</a>
-<br/>-  <a href="https://codepen.io" target="_blank">In-browser HTML/CSS/JS live editor</a>
-<br/>-  <a href="https://www.quackit.com/css/css_color_codes.cfm" target="_blank">CSS Colour Picker</a>
-<br/>-  <a href="https://cssgradient.io/" target="_blank">CSS Gradient Maker</a>
+      <!--
+<img style="float: right; margin: 0;" src="img/distronaut_small.jpg" width="150" />-->
+<span class="b">
+  <strong>Essential Software:</strong>
+  <br/>-  <a href="https://javascript.info/code-editors" target="_blank">General info about code editors</a>
+  <br/>-  <a href="https://code.visualstudio.com/" target="_blank">IDE - Visual Studio Code</a>
+  <br/>-  <a href="https://atom.io/" target="_blank">Lightweight Code Editor - Atom</a>
+  <br/>-  <a href="https://javascript.info/devtools" target="_blank">About debugging JS within browser</a>
+  <br/>-  <a href="https://javascript.info/hello-world" target="_blank">Template for attaching & embedding JS</a>
+  <br/>-  <a href="https://codepen.io" target="_blank">In-browser HTML/CSS/JS live editor</a>
+  <br/>-  <a href="https://www.quackit.com/css/css_color_codes.cfm" target="_blank">CSS Colour Picker</a>
+  <br/>-  <a href="https://cssgradient.io/" target="_blank">CSS Gradient Maker</a>
+  <br/>
+  <br/> <strong>Learning Websites:</strong>
+  <br/>-  <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a> -
+  <br/>-  <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a> -
+</span> <span class="c">
+  <strong>How Tos:</strong>
+  <br/><a href="https://javascript.info/code-editors" target="_blank">General info about code editors</a> -
+  <br/><a href="https://code.visualstudio.com/" target="_blank">IDE - Visual Studio Code</a> -
+  <br/><a href="https://atom.io/" target="_blank">Lightweight Code Editor - Atom</a> -
+  <br/><a href="https://javascript.info/devtools" target="_blank">About debugging JS within browser</a> -
+  <br/><a href="https://javascript.info/hello-world" target="_blank">Template for attaching & embedding JS</a> -
+  <br/><a href="https://codepen.io" target="_blank">In-browser HTML/CSS/JS live editor</a> -
+  <br/><a href="https://www.quackit.com/css/css_color_codes.cfm" target="_blank">CSS Colour Picker</a> -
+  <br/><a href="https://cssgradient.io/" target="_blank">CSS Gradient Maker</a> -
+  <br/>
+  <br/> <strong>Useful Stuff:</strong>
+  <br/><a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a> -
+  <br/><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a> -
+  </span>
 <br/>
-<br/> <strong>Learning Websites:</strong>
-<br/>-  <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>
-<br/>-  <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a>
+
+
 </div>
+
+
+
 <p>
-    <strong>Hello world!</strong>
+    <strong>Welcome!</strong>
     <br/>
     <br/>
 
-    At the time of writing this, I barely know how to structure a plain HTML document, let alone any CSS or JS. I would like to learn how to do front-end development e.g. for in-house CRM systems. I already understand many concepts of computer programming through advanced GML (Game Maker Language) use for indie gamedev. Hopefully this will give me a head start. Time to learn how to use computers in the real world. Time to learn something useful!
+    My GitHub site stores resources I'm gathering while I try to learn coding. I also use it to test my projects across different devices.
 
     <br/>
     <br/>
@@ -150,17 +223,9 @@ img{
 </div>
 <div>
 <p>
-<img style="float: left; margin: 0px 15px 15px 0px;" src="img/pastel_mornings.jpg" width="100" />
-It won't take a lot of thought for you to do it
-You just feel the groove, and baby then you move it and oh
-Oh, dance the night away
-We're having big fun
-And the party's just begun yeah, yeah yeah yeah
-We're having big fun
-Big fun
+<img style="float: left; margin: 0px 15px 0px 0px;" src="img/pastel_mornings.jpg" width="100" />
+But I must explain to you how all this <span style="color:lime">mistaken idea of denouncing pleasure</span> and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
 <br />
-<br />
-Because the <span style="color:lime">PASTEL MORNINGS</span> thumbnail in this element would bleed over the bottom of the above text, due to the tiny font size, I am adding this additional block of text.
 </p></div>
   <hr />
 <p>The date and time: <span id="datetime"></span></p>
