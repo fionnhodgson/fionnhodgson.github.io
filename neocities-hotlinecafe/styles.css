@@ -1,0 +1,163 @@
+body {
+      background: #50c3f1;
+      background-image: url("SkyBanner.gif");
+      background-repeat: repeat-x;
+      background-attachment: fixed;
+    }
+    p, ul, FORM{
+      border-radius: 1px;
+      background: black;
+      background: #003748;
+      box-shadow: 3px 3px #ff008c;
+      color: #bfc4db;
+      width: 678px;
+      margin: 15px auto;
+      padding: 12px;
+      border: 0 solid black;
+      font-family: "PT Mono", sans-serif;
+	    font-size: 11px;
+	    line-height: 16pt;
+    }
+
+
+span,  a:link {
+    text-decoration: none;
+    color: #66ccff;
+    font-weight: bold
+    
+  }
+
+a:visited {
+    text-decoration: none;
+    color: #00cc66;
+  }
+
+ a:hover {
+    text-decoration: none;
+    color: #ff008c;
+    transition: 0.4s;
+  }
+
+a:active {
+    text-decoration: underline;
+    color: #66ffff;
+  }
+
+    h1 {
+      color: #00e7fc;
+      margin: 15px auto;
+      text-align: center;
+      width: 700px;
+      font-family: "PT Mono", sans-serif;
+	    font-size: 17px;
+    }
+
+    h2 {
+      border-radius: 2px;
+      background: #003748;
+      box-shadow: 3px 3px #ff008c;
+      color: #FFFFFF;
+      margin: 5px auto;
+      padding: 5px;
+      text-align: center;
+      width: 500px;
+      font-family: "PT Mono", sans-serif;
+	    font-size: 17px;
+    }
+
+    .center {
+      display: block;
+      width:700px;
+	  margin: 15px auto;
+	  border: 2px solid black;
+    box-shadow: 3px 3px #cc33ff;
+    }
+    
+    .headimg{
+       display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+      }
+      
+    .buttons{
+text-align: center;
+      }
+
+    .container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {  
+  border-radius: 1px;
+  background: #003748;
+  box-shadow: 3px 3px #ff008c;
+  overflow: hidden;
+  width:700px;
+  margin: 22px auto;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: "PT Mono", sans-serif;
+  color: #00fcc1;
+  text-align: center;
+  margin: 22px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ff008c;
+  color: white;
+  padding: 4px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: #cc33ff;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00ff59;
+  font-family: "Questrial", sans-serif;
+  font-size: 24px;
+  text-shadow: 3px 3px #000;
+  letter-spacing: 7px;
+}
+
+hr{
+  border-top: 1px double #000;
+  width: 700px;
+}
+
+span.b {
+  display: inline-block;
+  width: 310px;
+  margin-left: 2px;
+  color: white;
+}
+
+span.c {
+  display: inline-block;
+  vertical-align:top;
+  width: 357px;
+  text-align: right;
+  color: white;
+}
+
+img{
+  border-radius: 4px;
+  margin: 8px;
+}
